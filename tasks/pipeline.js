@@ -15,6 +15,8 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
+  'styles/google-fonts.css',
+  'bower_components/materialize/dist/css/materialize.min.css',
   'styles/**/*.css'
 ];
 
@@ -28,10 +30,13 @@ var jsFilesToInject = [
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
-
+  'bower_components/jquery/dist/jquery.min.js',
+  'bower_components/materialize/dist/js/materialize.min.js',
+  'bower_components/angular/angular.min.js',
+  'js/**/*.js'
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  
 ];
 
 

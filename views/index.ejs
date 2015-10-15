@@ -1,0 +1,76 @@
+<div ng-app="SignupModule" ng-controller="SignupCtrl">
+	<div class="row">
+		<div class="s12 card-panel blue n-m-t">
+			<h5 class="white-text">Activity</h5>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s12 m4 offset-m1">
+			<div class="card-panel z-depth-1">
+				<form>
+					<div class="row">
+						<div class="input-field col s12">
+						   <i class="material-icons prefix">email</i>
+						   <input name="si_email" id="si_email" type="email" class="validate">
+						   <label for="si_email">E-mail</label>
+						</div>
+					</div>	
+					<div class="row">
+					    <div class="input-field col s12">
+					    	  <i class="material-icons prefix">lock</i>
+					          <input name="si_password" id="si_password" type="password" class="validate">
+					          <label for="si_password">Password</label>
+					    </div>
+					</div>
+					<div class='row'>
+						<a href="#" class="center-align col s12 waves-effect waves-blue btn-flat">Forgot password?</a>
+					</div>
+					<div class="row">						
+					 <button class="btn col m12 waves-effect waves-light blue" type="submit" name="action">   Log in<i class="material-icons right">send</i>
+					 </button>
+					</div>	
+					<input type="hidden" id="csrf" value= <%=_csrf %> />				
+				</form>
+			</div>
+		</div>
+		<div  class="col s12 m4 offset-m1">
+			<div class="card-panel z-depth-1">
+				<form class="signup-form" action="/user" method="POST" >
+					<div class="row">
+						<div class="input-field col s12">
+						   <i class="material-icons prefix">account_circle</i>
+						   <input name="username" id="username" type="text" class="validate">
+						   <label for="username">Username</label>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="input-field col s12">
+						   <i class="material-icons prefix">email</i>
+						   <input name="email" id="email" type="email" class="validate">
+						   <label for="email">E-mail</label>
+						</div>
+					</div>	
+					<div class="row">
+					    <div class="input-field col s12">
+					    	  <i class="material-icons prefix">lock</i>
+					          <input name="password" id="password" type="password" class="validate">
+					          <label for="password">Password</label>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="input-field col s12">
+					    	  <i class="material-icons prefix">lock</i>
+					          <input name="confirm" id="confirm" type="password" class="validate">
+					          <label for="confirm">Confirm-password</label>
+					    </div>
+					</div>
+					<div class="row">						
+					 <button class="btn col m12 waves-effect waves-light blue" type="submit">  Sign up<i class="material-icons right">send</i>
+					 </button>
+					</div>
+					<input type="hidden" name="_csrf" value= <%=_csrf %> />									
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

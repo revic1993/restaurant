@@ -1,0 +1,25 @@
+{
+  "name": "activity",
+  "version": "1.0.0",
+  "homepage": "https://github.com/revic1993/restaurant",
+  "authors": [
+    "Rujul Solanki <rujulsolanki1993@gmail.com>"
+  ],
+  "description": "just a demo project",
+  "keywords": [
+    "activity"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.97.1",
+    "angular": "~1.4.7"
+  }
+}

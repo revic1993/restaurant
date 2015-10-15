@@ -31,10 +31,8 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-  '/': {
-    view: 'homepage'
-  }
+ 'POST /user/email' : 'UserController.findByEmail',
+ '/': {view: 'index'}
 
   /***************************************************************************
   *                                                                          *
